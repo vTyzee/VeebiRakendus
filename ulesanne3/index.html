@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        #spinner {
+            display: none;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>dashboard</h1>
+    <input type="text" id="search" placeholder="Поиск по имени">
+    <select id="dataType">
+        <option value="users">users</option>
+        <option value="posts">posts</option>
+    </select>
+    <button id="loadDataBtn">load info</button>
+    <div id="spinner">loading...</div>
+    <div id="errorMessage" class="error"></div>
+    <div id="resultContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
