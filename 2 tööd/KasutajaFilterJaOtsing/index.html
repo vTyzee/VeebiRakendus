@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Otsing ja sorteering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Otsing ja sorteering</h1>
+
+    <div class="controls">
+      <input id="search" type="text" placeholder="Search ny name:" />
+      <select id="mode">
+        <option value="users">Users</option>        
+        <option value="posts">Posts</option>
+      </select>
+      <button id="load">Load Data</button>
+
+      <select id="sort">
+        <option value="">No sorting</option>
+        <option value="usersNameAY">Names A-Y</option>
+        <option value="postsTitleLen">Post titles by length</option>
+      </select>
+    </div>
+
+    <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+    <div id="error" class="error"></div>
+    <div id="results" class="results"></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

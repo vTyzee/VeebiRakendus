@@ -1,0 +1,14 @@
+.Area {
+    position: relative;      
+    width: 2030px;            
+    height: 800px;           
+    border: 2px solid black; 
+    margin-top: 10px;       
+    background-color: #f0f0f0;
+  }
+
+  .catchBtn {
+    position: absolute;
+    width: 120px;  
+    height: 50px;   
+  }
