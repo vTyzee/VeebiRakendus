@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let u of ulesanded">
+      <label>
+        <input type="checkbox" [checked]="u.tehtud" (change)="muuda($event, u)" />
+        <span [style.textDecoration]="u.tehtud ? 'line-through' : 'none'">
+          {{ u.nimi }}
+        </span>
+      </label>
+    </li>
+    <li *ngIf="!ulesanded || ulesanded.length === 0">
+      (Siin pole praegu ühtegi ülesannet)
+    </li>
+  </ul>
+  

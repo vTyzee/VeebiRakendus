@@ -1,0 +1,12 @@
+<div>
+    <button [disabled]="aktiivne === 'koik'" (click)="vali('koik')" type="button">
+      Kõik
+    </button>
+    <button [disabled]="aktiivne === 'tehtud'" (click)="vali('tehtud')" type="button">
+      Tehtud
+    </button>
+    <button [disabled]="aktiivne === 'tegemata'" (click)="vali('tegemata')" type="button">
+      Tegemata
+    </button>
+  </div>
+  

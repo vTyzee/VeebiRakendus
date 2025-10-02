@@ -1,0 +1,21 @@
+<h1>{{ pealkiri }}</h1>
+
+<!-- Ввод новой задачи -->
+<app-todo-input (lisa)="lisaUlesanne($event)"></app-todo-input>
+
+<!-- Фильтры -->
+<app-todo-filter
+  [aktiivne]="filter"
+  (muuda)="muudaFilter($event)"
+></app-todo-filter>
+
+<!-- Счётчики -->
+<p>
+  Kokku: {{ kokku }} | Tehtud: {{ tehtud }} | Tegemata: {{ kokku - tehtud }}
+</p>
+
+<!-- Список задач (с учётом фильтра) -->
+<app-todo-list
+  [ulesanded]="kuvatavad"
+  (olekuMuutus)="muudaOlek($event)"
+></app-todo-list>

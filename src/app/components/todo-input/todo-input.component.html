@@ -1,0 +1,11 @@
+<form (submit)="lisaKlikk(); $event.preventDefault()">
+    <input
+      type="text"
+      [(ngModel)]="uusNimi"
+      name="uusNimi"
+      placeholder="Uus ülesanne..."
+      aria-label="Uue ülesande sisestus"
+    />
+    <button type="submit">Lisa</button>
+  </form>
+  
